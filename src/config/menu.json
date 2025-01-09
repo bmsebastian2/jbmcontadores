@@ -1,7 +1,7 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
@@ -9,11 +9,11 @@
       "url": "/blog"
     },
     {
-      "name": "Pricing",
+      "name": "Precio",
       "url": "/pricing"
     },
     {
-      "name": "Contact",
+      "name": "Contactos",
       "url": "/contact"
     },
     {
@@ -21,13 +21,13 @@
       "url": "/faq"
     },
     {
-      "name": "Elements",
+      "name": "Elementos",
       "url": "/elements"
     }
   ],
   "footer": [
     {
-      "name": "Company",
+      "name": "Compañia",
       "menu": [
         {
           "text": "Pricing",

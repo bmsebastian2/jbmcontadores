@@ -1,12 +1,13 @@
 ---
-title: "Contact Us"
+title: "Contáctenos"
 draft: false
-info: 
-  title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
-  contacts: 
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+info:
+  title: ¡Por qué deberías contactarnos!
+  description:
+    Brindamos soluciones contables precisas y estratégicas para optimizar tus finanzas.
+    Simplificamos tu gestión
+  contacts:
+    - "teléfono: +598 95 541 184"
+    - "Correo: [joanbenitez@gmail.com](mailto:joanbenitez@gmail.com)"
+    - "Dirección: Av., Montevideo, Uruguay"
 ---
-

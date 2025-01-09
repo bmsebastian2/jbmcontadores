@@ -15,13 +15,18 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form class="contact-form" method="POST" action={contact_form_action}>
+          <form
+            class="contact-form"
+            method="POST"
+            action={contact_form_action}
+            enctype="text/plain"
+          >
             <div class="mb-3">
               <input
                 class="form-input w-full rounded"
                 name="name"
                 type="text"
-                placeholder="Name"
+                placeholder="Nombre"
                 required
               />
             </div>
@@ -30,7 +35,7 @@ const { title, description, info } = entry?.data;
                 class="form-input w-full rounded"
                 name="email"
                 type="email"
-                placeholder="Your email"
+                placeholder="Tu email"
                 required
               />
             </div>
@@ -39,7 +44,7 @@ const { title, description, info } = entry?.data;
                 class="form-input w-full rounded"
                 name="subject"
                 type="text"
-                placeholder="Subject"
+                placeholder="Asunto"
                 required
               />
             </div>
@@ -47,9 +52,9 @@ const { title, description, info } = entry?.data;
               <textarea
                 class="form-textarea w-full rounded-md"
                 rows="7"
-                placeholder="Your message"></textarea>
+                placeholder="Su mensaje"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary"> Send Now</button>
+            <button type="submit" class="btn btn-primary"> Envìar Ahora</button>
           </form>
         </div>
         <div class="content col-12 md:col-6 lg:col-5">
