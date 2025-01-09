@@ -10,7 +10,7 @@ banner:
 
 # feature
 feature:
-  title: Something You Need To Know
+  title: Algo que necesitas saber
   features:
     - name: "Clean Code"
       icon: "/images/code.svg"
@@ -33,51 +33,57 @@ feature:
 
 # services
 services:
-  - title: "It is the most advanced digital marketing and it company."
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Servicio de consultoría contable ."
+    content: "Ofrecemos soluciones personalizadas en contabilidad, asesoría fiscal y planificación financiera para personas y empresas. Nuestro equipo de expertos se especializa en la preparación de estados financieros, cumplimiento tributario, y optimización de recursos.
+Garantizamos precisión, confidencialidad y una gestión eficiente que te permitirá centrarte en el crecimiento de tu negocio mientras nosotros nos ocupamos de los números."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Échale un vistazo
       link: /contact
 
-  - title: "It is a privately owned Information and cyber security company"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Somos una empresa privada de servicios contables y financieros."
+    content: "Nos especializamos en ofrecer soluciones contables y financieras personalizadas para empresas y particulares. Gestionamos impuestos, elaboramos estados financieros y brindamos asesoría fiscal con la máxima precisión y cumplimiento normativo.
+Con un enfoque profesional y cercano, te ayudamos a optimizar tus recursos, garantizar la transparencia en tus finanzas y tomar decisiones informadas para el crecimiento de tu negocio.
+
+"
     images:
       - "/images/service-slide-1.png"
     button:
       enable: true
-      label: Check it out
+      label: Échale un vistazo
       link: /contact
 
-  - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "A company standing different from others"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Somos un equipo con amplia experiencia en servicios contables y financieros."
+    content: "Contamos con un equipo altamente capacitado y comprometido en ofrecer soluciones integrales en contabilidad, impuestos y planificación financiera. Trabajamos con precisión y adaptabilidad, garantizando resultados confiables y eficaces.
+Nuestro enfoque está diseñado para optimizar recursos, cumplir con las normativas fiscales y proporcionar la claridad financiera que necesitas para tomar decisiones estratégicas y hacer crecer tu negocio."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Échale un vistazo
+      link: /contact
+
+  - title: "Una empresa que se distingue de las demás en servicios contables y financieros."
+    content: "Nos destacamos por ofrecer un enfoque único y personalizado en la gestión contable, fiscal y financiera, brindando soluciones a medida para cada cliente. Nuestro equipo de profesionales experimentados se asegura de que tu negocio cumpla con todas las normativas mientras optimiza recursos y maximiza la rentabilidad.
+Nos comprometemos a ser un aliado estratégico que te ofrezca claridad, eficiencia y confianza en todos tus procesos financieros."
+    images:
+      - "/images/service-slide-1.png"
+      - "/images/service-slide-2.png"
+      - "/images/service-slide-3.png"
+    button:
+      enable: true
+      label: Échale un vistazo
       link: /contact
 
 # workflow
 workflow:
-  title: "Experimenta el mejor flujo de trabajo con nosotros."
+  title: "Experimenta la mejor gestión contable con nosotros.."
   image: "/images/banner.png"
   description: ""
 

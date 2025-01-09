@@ -30,7 +30,6 @@ console.log("Prueba");
               </a>
             )
           }
-
           {
             banner?.image && (
               <Image
@@ -58,13 +57,6 @@ console.log("Prueba");
           feature!.features.map((item: any, i: number) => (
             <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
               {item.icon && (
-                // <Image
-                //   class="mx-auto"
-                //   src={item.icon}
-                //   width={30}
-                //   height={30}
-                //   alt=""
-                // />
                 <img
                   class="mx-auto"
                   alt={item.icon}
@@ -83,8 +75,9 @@ console.log("Prueba");
       </div>
     </div>
   </section>
-
+  <p>donde estamos</p>
   <!-- Services -->
+
   {
     services!.map((service: any, index: number) => {
       const isOdd = index % 2 > 0;
@@ -149,7 +142,6 @@ console.log("Prueba");
       );
     })
   }
-
   <script>
     import { Swiper } from "swiper";
     import "swiper/css";
