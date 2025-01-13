@@ -2,16 +2,18 @@
 
 ---
 
-<div class="content">
-  <div class="content__container">
-    <p class="content__container__text">Servicios :</p>
+<div class="w-full mt-8 bg-slate-400 flex justify-center items-center">
+  <div class="content">
+    <div class="content__container">
+      <p class="content__container__text">Servicios :</p>
 
-    <ul class="content__container__list list-none">
-      <p class="content__container__list__item">Contabilidad</p>
-      <p class="content__container__list__item">Impuestos</p>
-      <p class="content__container__list__item">Sueldos</p>
-      <p class="content__container__list__item">Gestoria</p>
-    </ul>
+      <ul class="content__container__list list-none">
+        <p class="content__container__list__item">Contabilidad</p>
+        <p class="content__container__list__item">Impuestos</p>
+        <p class="content__container__list__item">Sueldos</p>
+        <p class="content__container__list__item">Gestoria</p>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -22,13 +24,10 @@
     line-height: 40px;
     color: #0042a6;
   }
-  .content {
+  .content { 
     position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     height: 40px;
-    min-width: 17vw;
+    width: 25vw;
     overflow: hidden;
   }
 
@@ -134,12 +133,14 @@
 
   @media screen and (max-width: 767px) {
     .content {
-      min-width: 55vw;
+      width: 78vw;
     }
 
     .content {
       position: absolute;
-      font-size: 16px;
+    }
+    p {
+      font-size: 1.2rem;
     }
   }
 </style>
