@@ -4,7 +4,7 @@ banner:
   content: Te ayudamos a gestionar tus impuestos y finanzas de forma eficiente.   <br/> Simplifica tus números y enfócate en hacer crecer tu negocio.
   image: /images/banner-art.png
   button:
-    label: "Contactenos"
+    label: "WhatsApp"
     link: "/contact"
     enable: true
 

@@ -1,5 +1,5 @@
 ---
-title: Precios
+title: Servicios
 description: "meta description"
 draft: false
 plans:

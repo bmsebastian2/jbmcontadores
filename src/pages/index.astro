@@ -5,6 +5,8 @@ import Cta from "@/layouts/components/Cta.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 import ListaServicios from "@/Components/ListaServicios.astro";
+import CardsTriangulo from "@/Components/CardsServices/CardsTriangulo.astro";
+
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, workflow, call_to_action } = homepage.data;
 ---
@@ -16,10 +18,10 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
       <div class="row text-center">
         <div class="mx-auto lg:col-10">
           <h1 class="font-primary font-bold">
-            <h1>
-              {banner?.title}
+            <h1 class="text-4xl md:text-4xl lg:text-5xl">
+              Contabilidad Confiable <span class="text-blue-600">/</span> Soluciones
+              Fiscales a tu Medida
             </h1>
-
             {
               banner?.content && (
                 <p
@@ -32,15 +34,16 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
             {
               banner?.button?.enable && (
                 <a class="btn btn-primary mt-4 mb-4" href={banner.button.link}>
-                  {banner.button.label}
+                  {banner.button.label}{" "}
                 </a>
               )
             }
+
             <ListaServicios />
             {
               banner?.image && (
                 <Image
-                  class="mx-auto mt-12"
+                  class="mx-auto mt-12 max-w-sm"
                   src={banner?.image}
                   width={650}
                   height={290}
@@ -52,15 +55,14 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
         </div>
       </div>
     </div>
-
     <!-- Features -->
-    <section class="section bg-theme-light">
+    <section class="section t">
       <div class="container">
-        <div class="text-center">
+        <!-- <div class="text-center">
           <h2>{markdownify(feature!.title)}</h2>
-        </div>
+        </div> -->
         <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
+          <!-- {
             feature!.features.map((item: any, i: number) => (
               <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
                 {item.icon && (
@@ -78,11 +80,13 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
                 </div>
               </div>
             ))
-          }
+          } -->
+
+          <CardsTriangulo />
         </div>
       </div>
     </section>
-    <p>donde estamos</p>
+
     <!-- Services -->
 
     {
@@ -193,3 +197,9 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
     <Cta cta={call_to_action} />
   </section>
 </Base>
+
+<style is:global>
+  .redes {
+    padding: 0.2rem;
+  }
+</style>

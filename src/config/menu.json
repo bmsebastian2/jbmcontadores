@@ -9,7 +9,7 @@
       "url": "/blog"
     },
     {
-      "name": "Precio",
+      "name": "Servicios",
       "url": "/pricing"
     },
     {
@@ -21,7 +21,7 @@
       "url": "/faq"
     },
     {
-      "name": "Elementos",
+      "name": "Acerca de nosotros",
       "url": "/elements"
     }
   ],
@@ -30,7 +30,7 @@
       "name": "Compañia",
       "menu": [
         {
-          "text": "Precios",
+          "text": "Servicios",
           "url": "/pricing"
         },
         {
