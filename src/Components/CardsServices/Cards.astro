@@ -4,7 +4,7 @@ const { title, icons, description } = Astro.props;
 
 <div class="cards hover:scale-105 transition flex flex-col">
   <div class="color">
-    <img src=`../../../public/images/${icons}` alt="" />
+    <img src=`/images/${icons}` alt="" />
   </div>
 
   <div class="dataTime">
@@ -12,7 +12,7 @@ const { title, icons, description } = Astro.props;
       <h4>{title}</h4>
       <a id="ancla" href="http://">
         <img
-          src="../../../public/images/moreinfo.svg"
+          src="/images/moreinfo.svg"
           alt="Icono de la empresa"
           width={60}
           height={60}

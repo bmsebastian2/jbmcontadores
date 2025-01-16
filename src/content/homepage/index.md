@@ -1,7 +1,8 @@
 ---
 banner:
   title: Contabilidad Confiable / Soluciones Fiscales a tu Medida
-  content: Te ayudamos a gestionar tus impuestos y finanzas de forma eficiente.   <br/> Simplifica tus números y enfócate en hacer crecer tu negocio.
+  content: Emprender no es fácil, por eso estamos para ayudarte con la  __liquidación de sueldos, declaraciones juradas, asesoría laboral y tributaria__. Gestionamos tus obligaciones ante DGI, BPS y MTSS, optimizando costos y reduciendo riesgos..
+  
   image: /images/banner-art.png
   button:
     label: "WhatsApp"

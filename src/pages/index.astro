@@ -19,32 +19,30 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
         <div class="mx-auto lg:col-10">
           <h1 class="font-primary font-bold">
             <h1 class="text-4xl md:text-4xl lg:text-5xl">
-              Contabilidad Confiable <span class="text-blue-600">/</span> Soluciones
-              Fiscales a tu Medida
+              Contabilidad Servicios fiscales
+              <span class="text-blue-600"> y</span> Gestión de nóminas
             </h1>
             {
               banner?.content && (
-                <p
-                  class="mt-4"
-                  set:html={"✔ " + markdownify(banner.content)}
-                />
+                <p class="mt-4" set:html={markdownify(banner.content)} />
               )
             }
 
-            {
-              banner?.button?.enable && (
-                <a class="btn btn-primary mt-4 mb-4" href={banner.button.link}>
-                  {banner.button.label}{" "}
-                </a>
-              )
-            }
+            <a
+              type="button"
+              target="_blank"
+              title="Whatsapp"
+              onclick="window.open('https://api.whatsapp.com/send?phone=59892319043&text=Hola,%20Quiero%20más%20%20información%20de%20%20los%20servicios%20ofrecidos%20por%20BAYMANET.')"
+            >
+              <button class="buttonGreenClear"> Whatapps ✔ </button>
+            </a>
 
             <ListaServicios />
             {
               banner?.image && (
                 <Image
                   class="mx-auto mt-12 max-w-sm"
-                  src={banner?.image}
+                  src="/images/cta.png"
                   width={650}
                   height={290}
                   alt="banner image"
@@ -201,5 +199,43 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
 <style is:global>
   .redes {
     padding: 0.2rem;
+  }
+  .buttonGreenClear {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.6rem;
+    margin: 1.3rem;
+    border-radius: 1rem;
+    background-color: #48cfcb;
+  }
+
+  .buttonGreenClear:hover,
+  .iconHover:hover {
+    animation: 1.2s forwards myAnim;
+  }
+  @keyframes myAnim {
+    0%,
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
   }
 </style>
