@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "JBMContadurores",
+    "title": "jbmcontadores",
     "base_url": "https://www.jbmcontadores.uy",
     "base_path": "/",
     "trailing_slash": false,

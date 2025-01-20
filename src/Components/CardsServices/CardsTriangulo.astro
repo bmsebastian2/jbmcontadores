@@ -9,8 +9,7 @@ import Cards from "./Cards.astro";
   <p>
     Ofrecemos servicios contables que incluyen el registro de transacciones,
     elaboración de estados financieros, conciliaciones bancarias, análisis de
-    costos, cumplimiento fiscal y asesoramiento financiero para optimizar la
-    gestión económica de tu empresa.
+    costos, cumplimiento fiscal y asesoramiento financiero.
   </p>
 </div>
 
@@ -50,132 +49,154 @@ import Cards from "./Cards.astro";
 <footer>
   <p class="footer-content__container__text">Para más información:</p>
   <div>
-    <img
-      class="redes hover:scale-125 transition"
-      src="/images/WhatsAppAzul.svg"
-      alt=""
-    />
-    <img
-      class="redes hover:scale-125 transition"
-      src="/images/emailAzul.svg"
-      alt=""
-    />
-    <img
-      class="redes hover:scale-125 transition"
-      src="/images/instagramAzul.svg"
-      alt=""
-    />
+    <a
+      type="button"
+      target="_blank"
+      title="Whatsapp"
+      onclick="window.open('https://api.whatsapp.com/send?phone=59892319043&text=Hola,%20Quiero%20más%20%20información%20de%20%20los%20servicios%20ofrecidos%20por%20JBMContadores.')"
+    >
+      <img
+        class="redes hover:scale-125 transition"
+        src="/images/WhatsAppAzul.svg"
+        alt="Logo Whatapss"
+      />
+    </a>
+
+    <a
+      href="mailto: yogacumana@hotmail.com"
+      title="Envíar correo"
+      target="_blank"
+      title="Email"
+    >
+      <img
+        class="redes hover:scale-125 transition"
+        src="/images/emailAzul.svg"
+        alt="Logo Email"
+      />
+    </a>
+
+    <a
+      href="https://www.instagram.com/jbmcontadores/"
+      target="_blank"
+      title="Instagram"
+    >
+      <img
+        class="redes hover:scale-125 transition"
+        src="/images/instagramAzul.svg"
+        alt="Logo Instagram"
+      />
+    </a>
   </div>
-</footer>
 
-<style>
-  :root {
-    --varyDarkBlue: hsl(234, 12%, 34%);
-    --grayishBlue: hsl(229, 6%, 66%);
-    --veryLightGray: hsl(0, 0%, 98%);
-    --weight1: 200;
-    --weight2: 400;
-    --weight3: 600;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  footer p {
-    color: var(--grayishBlue);
-  }
-  h2:first-of-type {
-    font-weight: var(--weight1);
-    color: var(--varyDarkBlue);
-  }
-
-  h2:last-of-type {
-    color: var(--varyDarkBlue);
-  }
-
-  @media (max-width: 400px) {
-    h1 {
-      font-size: 1.5rem;
+  <style>
+    :root {
+      --varyDarkBlue: hsl(234, 12%, 34%);
+      --grayishBlue: hsl(229, 6%, 66%);
+      --veryLightGray: hsl(0, 0%, 98%);
+      --weight1: 200;
+      --weight2: 400;
+      --weight3: 600;
     }
-  }
 
-  .header {
-    text-align: center;
-    line-height: 0.8;
-    margin-bottom: 10px;
-    margin-top: 100px;
-    background-color: #f6f9fc;
-    height: 65vh;
-  }
-
-  .header p {
-    margin: 0 auto;
-    line-height: 2;
-    color: var(--grayishBlue);
-  }
-
-  .box p {
-    color: var(--grayishBlue);
-  }
-
-  .box {
-    border-radius: 5px;
-    /* box-shadow: 0px 30px 40px -20px var(--grayishBlue); */
-    padding: 30px;
-    margin: 20px;
-  }
-
-  img {
-    float: right;
-  }
-
-  @media (max-width: 450px) {
-    .box {
-      height: 230px;
-      margin: 10px;
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
     }
+    footer p {
+      color: var(--grayishBlue);
+    }
+    h2:first-of-type {
+      font-weight: var(--weight1);
+      color: var(--varyDarkBlue);
+    }
+
+    h2:last-of-type {
+      color: var(--varyDarkBlue);
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
     .header {
-      margin-top: 0;
-      margin-bottom: 0;
-      height: 40vh;
-    }
-  }
-
-  @media (max-width: 950px) and (min-width: 450px) {
-    .box {
       text-align: center;
-      height: 180px;
-    }
-  }
-
-  h2 {
-    color: var(--varyDarkBlue);
-    font-weight: var(--weight3);
-  }
-
-  @media (min-width: 950px) {
-    .row1-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      line-height: 0.8;
+      margin-bottom: 10px;
+      margin-top: 100px;
+      background-color: #f6f9fc;
+      height: 65vh;
     }
 
-    .row2-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .box-down {
-      position: relative;
-      top: 150px;
-    }
-    .box {
-      width: 70%;
-    }
     .header p {
-      width: 80%;
+      margin: 0 auto;
+      line-height: 2;
+      color: var(--grayishBlue);
     }
-  }
-</style>
+
+    .box p {
+      color: var(--grayishBlue);
+    }
+
+    .box {
+      border-radius: 5px;
+      /* box-shadow: 0px 30px 40px -20px var(--grayishBlue); */
+      padding: 30px;
+      margin: 20px;
+    }
+
+    img {
+      float: right;
+    }
+
+    @media (max-width: 450px) {
+      .box {
+        height: 230px;
+        margin: 10px;
+      }
+      .header {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 40vh;
+      }
+    }
+
+    @media (max-width: 950px) and (min-width: 450px) {
+      .box {
+        text-align: center;
+        height: 180px;
+      }
+    }
+
+    h2 {
+      color: var(--varyDarkBlue);
+      font-weight: var(--weight3);
+    }
+
+    @media (min-width: 950px) {
+      .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box-down {
+        position: relative;
+        top: 150px;
+      }
+      .box {
+        width: 70%;
+      }
+      .header p {
+        width: 80%;
+      }
+    }
+  </style>
+</footer>

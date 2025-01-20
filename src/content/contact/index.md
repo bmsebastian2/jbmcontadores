@@ -9,5 +9,5 @@ info:
   contacts:
     - "teléfono: +598 95 541 184"
     - "Correo: [joanbenitez@gmail.com](mailto:joanbenitez@gmail.com)"
-    - "Dirección: Av., Montevideo, Uruguay"
+    - "Dirección: Montevideo, Uruguay"
 ---
