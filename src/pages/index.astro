@@ -6,7 +6,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 import ListaServicios from "@/Components/ListaServicios.astro";
 import CardsTriangulo from "@/Components/CardsServices/CardsTriangulo.astro";
-
+import Certificados from "@/Components/Certificados/Certificados.astro";
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, workflow, call_to_action } = homepage.data;
 ---
@@ -43,6 +43,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
             </a>
 
             <ListaServicios />
+            <Certificados />
             {
               banner?.image && (
                 <Image
