@@ -1,0 +1,57 @@
+# Bloqueo general para crawlers no deseados
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /search/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Bloqueo de parámetros que generan contenido duplicado
+Disallow: /*?session_id=
+Disallow: /*?sort=
+Disallow: /*?filter=
+
+# Permitir recursos estáticos (JavaScript, CSS, imágenes)
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Sitemap
+Sitemap: https://www.jbmcontadores.uy/sitemap.xml
+
+# Reglas para crawlers específicos
+User-agent: Googlebot
+Allow: /public/
+Disallow: /test/
+
+User-agent: Bingbot
+Allow: /public/
+Disallow: /beta/
+
+# Bloqueo de crawlers específicos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Crawl-delay para evitar sobrecarga del servidor
+User-agent: *
+Crawl-delay: 10
+
+# Notas adicionales
+# - Reemplaza "tusitio.com" con tu dominio real.
+# - Asegúrate de que el archivo Sitemap esté actualizado y accesible.
+# - Ajusta los bloqueos según las áreas sensibles o irrelevantes de tu sitio.
