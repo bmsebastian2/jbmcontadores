@@ -4,7 +4,7 @@
 <h2 align="center"> <a target="_blank" href="https://www.jbmcontadores.uy" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-www-jbmcontadores-uy/l4ztr9ms4v?form_factor=desktop">Page Speed (100%)🚀</a>
 </h2>
 
-![bigspring-light](https://demo.gethugothemes.com/thumbnails/bigspring-light.png)
+![bigspring-light](https://github.com/bmsebastian2/jbmcontadores/blob/main/public/images/Portada.png)
 
 JBMContadores es un tema Astro bellamente diseñado y altamente personalizable creado específicamente para sitios web de marketing y SaaS. Los usuarios pueden personalizar la combinación de colores, las fuentes, el menú, los enlaces sociales, etc. y actualizar el contenido fácilmente según sus requisitos. JBMContadores es el tema perfecto para mostrar sus productos o servicios SaaS y conectarse con los clientes.
 
