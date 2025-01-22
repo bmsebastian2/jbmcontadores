@@ -14,16 +14,17 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
 <Base>
   <!-- banner -->
 
-  <section class="section pb-[50px]">
-    <div class="container">
-      <div class="row text-center">
+ 
+  <section class="section pb-[10px] m-0 ">
+    <div class="container ">
+      <div class="row text-center ">
         <div class="mx-auto lg:col-10">
           <h1 class="font-primary font-bold">
             <div class="myBox"></div>
             <h1
               class="text-4xl md:text-4xl lg:text-5xl text-gray-800 antialiased font-serif"
             >
-              Contabilidad <span class="text-blue-600">,</span> Servicios fiscales
+              Contabilidad<span class="text-blue-600 ">,</span> Servicios fiscales
               <span class="text-blue-600 italic"> y </span> Gestión de nóminas
             </h1>
             <div class="myBox"></div>
@@ -41,8 +42,8 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
             >
               <button class="buttonGreenClear"> Whatapps ✔ </button>
             </a>
-
-            <ListaServicios />
+             <ListaServicios/>
+           
             <Certificados />
             {
               banner?.image && (
