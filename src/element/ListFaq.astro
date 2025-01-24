@@ -1,0 +1,37 @@
+---
+import OpcionesDes from "./OpcionesDes.astro";
+
+const listFaq = [
+  {
+    titulo: "¿Qué documento obtendrás?",
+    contenido:
+      "Un documento que acredita el monto líquido de los ingresos obtenidos por una persona física. Este certificado, emitido por un profesional habilitado, está diseñado para ser presentado ante diversos organismos.",
+  },
+  {
+    titulo: "¿Para qué se necesita un Certificado de Ingresos?",
+    contenido:
+      "Si generas ingresos fuera de una relación de dependencia y necesitas realizar trámites como la solicitud de un préstamo, es probable que te soliciten un Certificado de Ingresos. Este documento permite demostrar “cuánto ganas” cuando no cuentas con un recibo de sueldo emitido por un empleador.",
+  },
+  //   { titulo: "¿Cuál es el costo del certificado?", contenido: "" },
+  {
+    titulo: "¿En qué formato recibirás el certificado?",
+    contenido:
+      "El certificado se entregará en formato digital a tu correo electrónico y también en copia física que puedes retirar personalmente o enviar a alguien en tu lugar.",
+  },
+  {
+    titulo: "¿Cuánto tiempo debo esperar para obtener el certificado?",
+    contenido:
+      "Entregamos el certificado en un plazo de 48 horas hábiles, contadas desde la confirmación de la información necesaria y el pago. (*) Las horas hábiles son de lunes a viernes, de 7:00 a 20:00, excluyendo feriados.",
+  },
+];
+---
+
+<div class="space-y-1">
+  {
+    listFaq.map(({ titulo, contenido }) => (
+      <OpcionesDes titulo={titulo}>
+        <p>{contenido}</p>
+      </OpcionesDes>
+    ))
+  }
+</div>

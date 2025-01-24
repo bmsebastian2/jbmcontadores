@@ -1,0 +1,23 @@
+---
+import OpcionesDes from "../element/OpcionesDes.astro";
+import Requisitos from "../element/Requisitos.astro";
+import ListFaq from "./ListFaq.astro";
+const menu = [
+  {
+    titulo: "Requisitos",
+  },
+  {
+    titulo: "Preguntas Frecuentes",
+  },
+];
+---
+
+<div class="space-y-1 grid grid-cols-1 md:grid-cols-2">
+  {
+    menu.map(({ titulo }) => (
+      <OpcionesDes titulo={titulo}>
+        {titulo?.toLowerCase() === "requisitos" ? <Requisitos /> : <ListFaq />}
+      </OpcionesDes>
+    ))
+  }
+</div>
