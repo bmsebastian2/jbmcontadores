@@ -1,0 +1,49 @@
+---
+const { title } = Astro.props;
+---
+
+<button
+  class="buttonGreenClear inline-flex text-white border-0 py-1 px-3 focus:outline-none rounded text-lg"
+  >{title}</button
+>
+
+<style>
+  .buttonGreenClear {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.6rem;
+    margin: 0.3rem;
+    border-radius: 1rem;
+    background-color: #48cfcb;
+  }
+
+  .buttonGreenClear:hover,
+  .iconHover:hover {
+    animation: 1.2s forwards myAnim;
+  }
+  @keyframes myAnim {
+    0%,
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  }
+</style>

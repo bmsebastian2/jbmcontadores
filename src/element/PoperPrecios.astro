@@ -1,0 +1,76 @@
+<div class="relative inline-block">
+  <!-- Botón -->
+  <button
+    title="Precio de los certificados"
+    id="popoverButton"
+    aria-haspopup="true"
+    aria-expanded="false"
+    class="px-4 py-2 text-white bg-gray-400 rounded-md hover:bg-blue-700 focus:outline-none"
+  >
+    Precio
+  </button>
+
+  <!-- Popover -->
+  <div
+    id="popoverContent"
+    role="dialog"
+    aria-labelledby="popoverButton"
+    class="absolute left-1/2 transform -translate-x-1/2 mt-2 hidden md:w-128 w-80 bg-white border border-gray-300 rounded-lg shadow-lg"
+  >
+    <div class="p-4">
+      <h5 class="text-lg font-semibold">
+        El precio depende del tipo de certificación requerida y del nivel de
+        exigencia de la institución solicitante:
+      </h5>
+      <hr class="mt-4 mb-4" />
+      <div class="flow-root">
+        <dl class="-my-3 divide-y divide-gray-100 text-sm">
+          <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
+            <dt class="font-medium text-gray-900">
+              Un Certificado básico con una sola fuente de ingresos cuesta
+              aproximadamente $3.500 (más $250 por el timbre profesional).
+            </dt>
+            <dd class="text-gray-700 sm:col-span-2">
+              $3.500 (más $250 por el timbre profesional).
+            </dd>
+          </div>
+
+          <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
+            <dt class="font-medium text-gray-900">
+              Certificaciones con mayores requerimientos, como las del BHU, que
+              incluyen desgloses de gastos y presentación de declaraciones
+              juradas
+            </dt>
+            <dd class="text-gray-700 sm:col-span-2">
+              $5.000. El costo del timbre profesional es obligatorio por
+              normativa y no forma parte de los honorarios del contador.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const button = document.getElementById("popoverButton");
+  const popover = document.getElementById("popoverContent");
+
+  if (button && popover) {
+    button.addEventListener("click", () => {
+      const isHidden = popover.classList.toggle("hidden");
+      button.setAttribute("aria-expanded", String(!isHidden));
+    });
+
+    // Cerrar el popover si se hace clic fuera de él
+    document.addEventListener("click", (e) => {
+      if (
+        !button.contains(e.target as Node) &&
+        !popover.contains(e.target as Node)
+      ) {
+        popover.classList.add("hidden");
+        button.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+</script>
