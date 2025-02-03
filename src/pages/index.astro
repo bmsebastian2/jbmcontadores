@@ -10,6 +10,7 @@ import CardsTriangulo from "@/Components/CardsServices/CardsTriangulo.astro";
 import PrecioCertificados from "@/Components/PrecioCertificados.astro";
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, workflow, call_to_action } = homepage.data;
+import BotonArriba from "@/element/BotonArriba.astro";
 ---
 
 <Base>
@@ -58,7 +59,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
     </section>
 
     <!-- Services -->
-
+    <BotonArriba />
     {
       services!.map((service: any, index: number) => {
         const isOdd = index % 2 > 0;
@@ -94,7 +95,6 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
                     />
                   )}
                 </div>
-
                 {/* Content */}
                 <div
                   class={`service-content mt-5 md:mt-0 ${!isOdd && "md:order-1"}`}

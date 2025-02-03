@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { markdownify } from "@/lib/utils/textConverter";
-
+import Boton from "@/element/Boton.astro";
 const { cta } = Astro.props;
 ---
 
@@ -19,15 +19,12 @@ const { cta } = Astro.props;
       </div>
       <div class="mt-5 text-center md:mt-0 md:text-left md:col-6 lg:col-5">
         <h2>{cta?.title}</h2>
-        <p class="mt-6" set:html={markdownify(cta?.content)} />
+        <p class="my-6 font-bold" set:html={markdownify(cta?.content)} />
         {
           cta.button.enable && (
-            <a
-              class="btn btn-primary mt-4"
-              href={cta.button.link}
-              rel={cta.button.rel}
-            >
-              {cta.button.label}
+            <a href={cta.button.link} rel={cta.button.rel}>
+              {/* {cta.button.label} */}
+              <Boton title={cta.button.label} />
             </a>
           )
         }

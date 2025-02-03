@@ -91,7 +91,7 @@ workflow:
 # call_to_action
 call_to_action:
   title: ¿Listo para empezar?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  content: Gestionamos tus números para que tú te enfoques en crecer. ¡Cuentas claras, negocio próspero! 💼✅.
   image: "/images/cta.png"
   button:
     enable: true

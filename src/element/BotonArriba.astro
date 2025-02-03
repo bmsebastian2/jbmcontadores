@@ -1,0 +1,56 @@
+<button class="btn-inicio" id="btnInicio">Ir al Inicio</button>
+
+<!-- Script que se ejecuta solo después de que el DOM esté listo -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btnInicio = document.getElementById("btnInicio");
+
+    if (btnInicio) {
+      // Mostrar o ocultar el botón según el scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          btnInicio.style.display = "block";
+        } else {
+          btnInicio.style.display = "none";
+        }
+      });
+
+      // Función de desplazamiento suave con requestAnimationFrame
+      function smoothScrollToTop() {
+        const scrollStep = -window.scrollY / 15; // Velocidad del desplazamiento
+        const scrollAnimation = () => {
+          if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+            requestAnimationFrame(scrollAnimation);
+          }
+        };
+        requestAnimationFrame(scrollAnimation);
+      }
+
+      // Evento click para el botón
+      btnInicio.addEventListener("click", smoothScrollToTop);
+    }
+  });
+</script>
+
+<style>
+  /* Estilos del botón */
+  .btn-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Ocultar inicialmente */
+  }
+
+  .btn-inicio:hover {
+    background-color: #0056b3;
+  }
+</style>
