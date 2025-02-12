@@ -2,15 +2,22 @@
 import Cards from "./Cards.astro";
 ---
 
-<div class="header">
+<div class="header flex flex-col items-center text-justify">
   <h2>Servicios</h2>
   <h2>Contables</h2>
-
-  <p>
-    Ofrecemos servicios contables que incluyen el registro de transacciones,
-    elaboración de estados financieros, conciliaciones bancarias, análisis de
-    costos, cumplimiento fiscal y asesoramiento financiero.
+  <hr />
+  <p class="text-gray-700 font-sans text-xl text-center mt-10">
+    Ofrecemos servicios contables que incluyen <strong>
+      gestoria, nominas, sueldos ,contabilidad,</strong
+    >
+    elaboración de estados financieros y conciliaciones bancarias
   </p>
+  <img
+    class="redes hover:scale-125 transition mt-10"
+    title="Servicios JBMContadores"
+    src="/images/favicon.svg"
+    alt="Logo Whatapss"
+  />
 </div>
 
 <div class="row1-container">
@@ -46,8 +53,8 @@ import Cards from "./Cards.astro";
     />
   </div>
 </div>
-<footer>
-  <p class="footer-content__container__text">Para más información:</p>
+<footer class="flex justify-evenly items-center">
+  <p class="text-gray-500">Para más información:</p>
   <div>
     <a
       type="button"
@@ -100,14 +107,6 @@ import Cards from "./Cards.astro";
       padding: 0.2rem;
     }
 
-    footer {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    footer p {
-      color: var(--grayishBlue);
-    }
     h2:first-of-type {
       font-weight: var(--weight1);
       color: var(--varyDarkBlue);
@@ -124,7 +123,6 @@ import Cards from "./Cards.astro";
     }
 
     .header {
-      text-align: center;
       line-height: 0.8;
       margin-bottom: 10px;
       margin-top: 100px;
@@ -132,19 +130,8 @@ import Cards from "./Cards.astro";
       height: 65vh;
     }
 
-    .header p {
-      margin: 0 auto;
-      line-height: 2;
-      color: var(--grayishBlue);
-    }
-
-    .box p {
-      color: var(--grayishBlue);
-    }
-
     .box {
       border-radius: 5px;
-      /* box-shadow: 0px 30px 40px -20px var(--grayishBlue); */
       padding: 30px;
       margin: 20px;
     }
