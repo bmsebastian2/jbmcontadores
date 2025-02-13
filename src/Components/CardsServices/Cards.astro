@@ -1,18 +1,20 @@
 ---
+import { Image } from "astro:assets";
+import moreinfoLogo from "@/assets/moreinfo.svg";
 const { title, icons, description } = Astro.props;
 ---
 
 <div class="cards hover:scale-105 transition flex flex-col">
   <div class="color">
-    <img src=`/images/${icons}` alt="" />
+    <Image src={icons} alt={title} />
   </div>
 
-  <div class="dataTime">
+  <div class="dataTime border border-gray-300">
     <div class="header">
       <h4>{title}</h4>
       <a aria-label="Màs información" id="ancla" href="http://">
-        <img
-          src="/images/moreinfo.svg"
+        <Image
+          src={moreinfoLogo}
           alt="Icono de la empresa"
           width={60}
           height={60}
@@ -20,7 +22,6 @@ const { title, icons, description } = Astro.props;
       >
     </div>
     <div class="body">
-      <!-- <h4>$8:00hrs</h4> -->
       <hr />
       <p>
         {description}
@@ -36,12 +37,12 @@ const { title, icons, description } = Astro.props;
   }
   .cards {
     display: grid;
-    grid-template-rows: 25% 75%;
-    padding: 0.3rem;
+    grid-template-rows: 20% 80%;
+    padding: 0.2rem;
     width: 5rem;
   }
   .color {
-    background: hsl(195, 74%, 62%);
+    background: hsl(195, 45%, 45%);
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.8rem;
     display: flex;
@@ -50,10 +51,10 @@ const { title, icons, description } = Astro.props;
     overflow: hidden;
   }
   .color img {
-    width: 4rem;
-    height: 4rem;
-    margin-top: -0.5rem;
-    opacity: 0.3;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -0.2rem;
+    opacity: 0.6;
   }
 
   .dataTime {

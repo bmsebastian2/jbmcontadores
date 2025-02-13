@@ -1,12 +1,10 @@
 ---
 import { Image } from "astro:assets";
+import jbmcontadoresLogo from "@/assets/logo.svg";
 import config from "@/config/config.json";
-const { src } = Astro.props;
 const {
-  logo,
   logo_width,
   logo_height,
-  logo_text,
   title,
 }: {
   logo: string;
@@ -22,22 +20,14 @@ const {
   href="/"
   class="navbar-brand block md:w-[150px] lg:w-auto"
 >
-  {
-    src || logo ? (
-      <Image
-        width={logo_width.replace("px", "") * 2}
-        height={logo_height.replace("px", "") * 2}
-        src={src ? src : logo}
-        alt={title}
-        style={{
-          height: logo_height.replace("px", "") + "px",
-          width: logo_width.replace("px", "") + "px",
-        }}
-      />
-    ) : logo_text ? (
-      logo_text
-    ) : (
-      title
-    )
-  }
+  <Image
+    width={logo_width.replace("px", "") * 2}
+    height={logo_height.replace("px", "") * 2}
+    src={jbmcontadoresLogo}
+    alt={title}
+    style={{
+      height: logo_height.replace("px", "") + "px",
+      width: logo_width.replace("px", "") + "px",
+    }}
+  />
 </a>

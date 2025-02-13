@@ -5,6 +5,8 @@ import Boton from "../element/Boton.astro";
 import BotonMercadoPago from "../element/BotonMercadoPago.astro";
 import Faq from "../element/Faq.astro";
 import PoperPrecios from "../element/PoperPrecios.astro";
+import { Image } from "astro:assets";
+import certificadoImage from "../assets/Group 8.jpg";
 ---
 
 <section class="text-gray-600 body-font mt-12">
@@ -25,6 +27,7 @@ import PoperPrecios from "../element/PoperPrecios.astro";
         <strong>{contenido.frontmatter.title}</strong>
         {contenido.frontmatter.description}
       </p>
+
       <div class="flex flex-col md:flex-row justify-center items-center">
         <a
           aria-label="Solcitar info por Whatsapp"
@@ -44,14 +47,7 @@ import PoperPrecios from "../element/PoperPrecios.astro";
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img
-        width="auto"
-        height="auto"
-        class="object-cover object-center rounded"
-        title="Certificados de ingreso"
-        alt="Logo y certificado de ingreso"
-        src="/images/Group 8.jpg"
-      />
+      <Image src={certificadoImage} alt="Certificado ingreso" />
     </div>
   </div>
 </section>

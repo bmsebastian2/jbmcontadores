@@ -1,7 +1,7 @@
 ---
 banner:
   title: Contabilidad Confiable / Soluciones Fiscales a tu Medida
-  content: Emprender no es fácil, por eso estamos para ayudarte con la  __liquidación de sueldos, declaraciones juradas, asesoría laboral y tributaria__. Gestionamos tus obligaciones ante DGI, BPS y MTSS, optimizando costos y reduciendo riesgos..
+  content: Estamos para ayudarte con la  __liquidación de sueldos, declaraciones juradas, asesoría laboral y tributaria__. Gestionamos tus obligaciones ante **DGI, BPS y MTSS**, optimizando costos y reduciendo riesgos..
   
   image: /images/banner-art.png
   button:
@@ -38,12 +38,12 @@ services:
     content: "Ofrecemos soluciones personalizadas en contabilidad, asesoría fiscal y planificación financiera para personas y empresas. Nuestro equipo de expertos se especializa en la preparación de estados financieros, cumplimiento tributario, y optimización de recursos.
 Garantizamos precisión, confidencialidad y una gestión eficiente que te permitirá centrarte en el crecimiento de tu negocio mientras nosotros nos ocupamos de los números."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/src/assets/service-slide-1.png"
+      - "/src/assets/service-slide-2.png"
+      - "/src/assets/service-slide-3.png"
     button:
       enable: true
-      label: Échale un vistazo
+      label: Más
       link: /contact
 
   - title: "Somos una empresa privada de servicios contables y financieros."
@@ -52,47 +52,47 @@ Con un enfoque profesional y cercano, te ayudamos a optimizar tus recursos, gara
 
 "
     images:
-      - "/images/service-slide-1.png"
+      - "/src/assets/service-slide-1.png"
     button:
       enable: true
-      label: Échale un vistazo
+      label: Más
       link: /contact
 
   - title: "Somos un equipo con amplia experiencia en servicios contables y financieros."
     content: "Contamos con un equipo altamente capacitado y comprometido en ofrecer soluciones integrales en contabilidad, impuestos y planificación financiera. Trabajamos con precisión y adaptabilidad, garantizando resultados confiables y eficaces.
 Nuestro enfoque está diseñado para optimizar recursos, cumplir con las normativas fiscales y proporcionar la claridad financiera que necesitas para tomar decisiones estratégicas y hacer crecer tu negocio."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/src/assets/service-slide-1.png"
+      - "/src/assets/service-slide-2.png"
+      - "/src/assets/service-slide-3.png"
     button:
       enable: true
-      label: Échale un vistazo
+      label: Más
       link: /contact
 
   - title: "Una empresa que se distingue de las demás en servicios contables y financieros."
     content: "Nos destacamos por ofrecer un enfoque único y personalizado en la gestión contable, fiscal y financiera, brindando soluciones a medida para cada cliente. Nuestro equipo de profesionales experimentados se asegura de que tu negocio cumpla con todas las normativas mientras optimiza recursos y maximiza la rentabilidad.
 Nos comprometemos a ser un aliado estratégico que te ofrezca claridad, eficiencia y confianza en todos tus procesos financieros."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/src/assets/service-slide-1.png"
+      - "/src/assets/service-slide-2.png"
+      - "/src/assets/service-slide-3.png"
     button:
       enable: true
-      label: Échale un vistazo
+      label: Más
       link: /contact
 
 # workflow
 workflow:
-  title: "Experimenta la mejor gestión contable con nosotros.."
-  image: "/images/banner.png"
+  title: "Gestionamos tu contabilidad.."
+  image: "/src/assets/banner.png"
   description: ""
 
 # call_to_action
 call_to_action:
   title: ¿Listo para empezar?
   content: Gestionamos tus números para que tú te enfoques en crecer. ¡Cuentas claras, negocio próspero! 💼✅.
-  image: "/images/cta.png"
+  image: "/src/assets/cta.png"
   button:
     enable: true
     label: "Contactenos"

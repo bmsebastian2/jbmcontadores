@@ -1,5 +1,14 @@
 ---
 import Cards from "./Cards.astro";
+import { Image } from "astro:assets";
+import jbmContadoresLogo from "@/assets/favicon.svg";
+import gestoriaLogo from "@/assets/gestoria.svg";
+import moneyLogo from "@/assets/money.svg";
+import calculteLogo from "@/assets/calculate.svg";
+import nominalogo from "@/assets/nomina.svg";
+import whatapssLogo from "@/assets/WhatsAppAzul.svg";
+import instagramLogo from "@/assets/instagramAzul.svg";
+import emailLogo from "@/assets/emailAzul.svg";
 ---
 
 <div class="header flex flex-col items-center text-justify">
@@ -12,10 +21,12 @@ import Cards from "./Cards.astro";
     >
     elaboración de estados financieros y conciliaciones bancarias
   </p>
-  <img
+  <Image
+    width="60"
+    height="60"
     class="redes hover:scale-125 transition mt-10"
     title="Servicios JBMContadores"
-    src="/images/favicon.svg"
+    src={jbmContadoresLogo}
     alt="Logo Whatapss"
   />
 </div>
@@ -24,7 +35,7 @@ import Cards from "./Cards.astro";
   <div class="box box-down cyan">
     <Cards
       title="Nominas"
-      icons="nomina.svg"
+      icons={gestoriaLogo}
       description="Elaboración y control detallado de las nóminas según normativa vigente."
     />
   </div>
@@ -32,24 +43,24 @@ import Cards from "./Cards.astro";
   <div class="box red">
     <Cards
       title="Gestoria"
-      icons="gestoria.svg"
+      icons={moneyLogo}
       description="Asesoramiento integral en trámites legales y administrativos."
     />
   </div>
   <div class="box box-down blue">
     <Cards
       title="Sueldos"
-      icons="money.svg"
+      icons={calculteLogo}
       description="Gestión precisa y puntual del cálculo y pago de sueldos de tu equipo."
     />
   </div>
 </div>
 <div class="row2-container">
-  <div class="box orange">
+  <div class="box">
     <Cards
       title="Contabilidad"
-      icons="calculate.svg"
-      description="Registro y análisis contable para la correcta toma de decisiones financieras."
+      icons={nominalogo}
+      description="Registro y análisis contable para toma de decisiones financieras."
     />
   </div>
 </div>
@@ -63,11 +74,11 @@ import Cards from "./Cards.astro";
       title="Whatsapp"
       onclick="window.open('https://api.whatsapp.com/send?phone=59892319043&text=Hola,%20Quiero%20más%20%20información%20de%20%20los%20servicios%20ofrecidos%20por%20JBMContadores.')"
     >
-      <img
-        width="auto"
-        height="auto"
+      <Image
+        width="40"
+        height="40"
         class="redes hover:scale-125 transition"
-        src="/images/WhatsAppAzul.svg"
+        src={whatapssLogo}
         alt="Logo Whatapss"
       />
     </a>
@@ -79,11 +90,11 @@ import Cards from "./Cards.astro";
       target="_blank"
       title="Email"
     >
-      <img
-        width="auto"
-        height="auto"
+      <Image
+        width="40"
+        height="40"
         class="redes hover:scale-125 transition"
-        src="/images/emailAzul.svg"
+        src={emailLogo}
         alt="Logo Email"
       />
     </a>
@@ -94,11 +105,11 @@ import Cards from "./Cards.astro";
       target="_blank"
       title="Instagram"
     >
-      <img
-        width="auto"
-        height="auto"
+      <Image
+        width="40"
+        height="40"
         class="redes hover:scale-125 transition"
-        src="/images/instagramAzul.svg"
+        src={instagramLogo}
         alt="Logo Instagram"
       />
     </a>
@@ -139,8 +150,8 @@ import Cards from "./Cards.astro";
 
     .box {
       border-radius: 5px;
-      padding: 30px;
-      margin: 20px;
+      padding: 20px;
+      margin: 10px;
     }
 
     img {
@@ -155,7 +166,7 @@ import Cards from "./Cards.astro";
       .header {
         margin-top: 0;
         margin-bottom: 0;
-        height: 40vh;
+        /* height: 40vh; */
       }
     }
 
@@ -172,17 +183,13 @@ import Cards from "./Cards.astro";
     }
 
     @media (min-width: 950px) {
-      .row1-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
+      .row1-container,
       .row2-container {
         display: flex;
         justify-content: center;
         align-items: center;
       }
+
       .box-down {
         position: relative;
         top: 150px;

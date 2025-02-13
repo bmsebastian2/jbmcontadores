@@ -1,36 +1,49 @@
 <button class="btn-inicio" id="btnInicio">Ir al Inicio</button>
 
-<!-- Script que se ejecuta solo después de que el DOM esté listo -->
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  function configurarBotonInicio() {
     const btnInicio = document.getElementById("btnInicio");
 
-    if (btnInicio) {
-      // Mostrar o ocultar el botón según el scroll
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-          btnInicio.style.display = "block";
-        } else {
-          btnInicio.style.display = "none";
-        }
-      });
+    if (!btnInicio) return;
 
-      // Función de desplazamiento suave con requestAnimationFrame
-      function smoothScrollToTop() {
-        const scrollStep = -window.scrollY / 15; // Velocidad del desplazamiento
-        const scrollAnimation = () => {
-          if (window.scrollY !== 0) {
-            window.scrollBy(0, scrollStep);
-            requestAnimationFrame(scrollAnimation);
-          }
-        };
-        requestAnimationFrame(scrollAnimation);
+    
+    window.removeEventListener("scroll", toggleButton);
+    btnInicio.removeEventListener("click", smoothScrollToTop);
+
+    
+    function toggleButton() {
+      if (window.scrollY > 300) {
+        btnInicio ? (btnInicio.style.display = "block") : null;
+      } else {
+        btnInicio ? (btnInicio.style.display = "none") : null;
       }
-
-      // Evento click para el botón
-      btnInicio.addEventListener("click", smoothScrollToTop);
     }
-  });
+
+   
+    function smoothScrollToTop() {
+      const scrollStep = -window.scrollY / 15;
+      function scrollAnimation() {
+        if (window.scrollY !== 0) {
+          window.scrollBy(0, scrollStep);
+          requestAnimationFrame(scrollAnimation);
+        }
+      }
+      requestAnimationFrame(scrollAnimation);
+    }
+
+    // Agregar eventos nuevamente
+    window.addEventListener("scroll", toggleButton);
+    btnInicio.addEventListener("click", smoothScrollToTop);
+
+    // Verificar si debe mostrarse al cargar la página
+    toggleButton();
+  }
+
+  // Ejecutar al cargar la página
+  document.addEventListener("DOMContentLoaded", configurarBotonInicio);
+
+  // Detectar cambios de página en Astro SPA
+  document.addEventListener("astro:after-swap", configurarBotonInicio);
 </script>
 
 <style>

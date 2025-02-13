@@ -1,5 +1,8 @@
 ---
 import { Image } from "astro:assets";
+import whatapssLogo from "@/assets/WhatsAppAzul.svg";
+import instagramLogo from "@/assets/instagramAzul.svg";
+import emailLogo from "@/assets/emailAzul.svg";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -47,9 +50,9 @@ const { footer_content, copyright } = config.params;
             title="Whatsapp"
             onclick="window.open('https://api.whatsapp.com/send?phone=59892319043&text=Hola,%20Quiero%20más%20%20información%20de%20%20los%20servicios%20ofrecidos%20por%20JBMContadores.')"
           >
-            <img
+            <Image
               class="redes hover:scale-125 transition"
-              src="/images/WhatsAppAzul.svg"
+              src={whatapssLogo}
               alt="Logo Whatapss"
             />
           </a>
@@ -61,9 +64,9 @@ const { footer_content, copyright } = config.params;
             target="_blank"
             title="Email"
           >
-            <img
+            <Image
               class="redes hover:scale-125 transition"
-              src="/images/emailAzul.svg"
+              src={emailLogo}
               alt="Logo Email"
             />
           </a>
@@ -74,9 +77,9 @@ const { footer_content, copyright } = config.params;
             target="_blank"
             title="Instagram"
           >
-            <img
+            <Image
               class="redes hover:scale-125 transition"
-              src="/images/instagramAzul.svg"
+              src={instagramLogo}
               alt="Logo Instagram"
             />
           </a>

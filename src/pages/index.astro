@@ -11,6 +11,7 @@ import PrecioCertificados from "@/Components/PrecioCertificados.astro";
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, workflow, call_to_action } = homepage.data;
 import BotonArriba from "@/element/BotonArriba.astro";
+import arrowImage from "@/assets/arrow-right.svg";
 ---
 
 <Base>
@@ -21,14 +22,14 @@ import BotonArriba from "@/element/BotonArriba.astro";
       <div class="row text-center">
         <div class="mx-auto lg:col-10">
           <h1 class="font-primary font-bold">
-            <div class="myBox"></div>
+            <div class="myBox mb-8"></div>
             <h1
               class="text-4xl md:text-4xl lg:text-5xl text-gray-800 antialiased font-serif"
             >
               Contabilidad<span class="text-blue-600">,</span> Servicios fiscales
               <span class="text-blue-600 italic"> y </span> Gestión de nóminas
             </h1>
-            <div class="myBox"></div>
+            <div class="myBox mt-8"></div>
             {
               banner?.content && (
                 <p class="mt-4" set:html={markdownify(banner.content)} />
@@ -36,8 +37,6 @@ import BotonArriba from "@/element/BotonArriba.astro";
             }
 
             <a
-              type="button"
-              target="_blank"
               title="Whatsapp"
               onclick="window.open('https://api.whatsapp.com/send?phone=59892319043&text=Hola,%20Quiero%20más%20%20información%20de%20%20los%20servicios%20ofrecidos%20por%20JBMContadores.')"
             >
@@ -107,9 +106,9 @@ import BotonArriba from "@/element/BotonArriba.astro";
                       class="cta-link inline-flex items-center text-primary"
                     >
                       {service?.button.label}
-                      <img
+                      <Image
                         class="ml-1"
-                        src="/images/arrow-right.svg"
+                        src={arrowImage}
                         width={18}
                         height={14}
                         alt="arrow"

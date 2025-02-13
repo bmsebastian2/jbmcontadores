@@ -55,24 +55,40 @@
 </div>
 
 <script>
-  const button = document.getElementById("popoverButton");
-  const popover = document.getElementById("popoverContent");
+  function configurarPopover() {
+    const button = document.getElementById(
+      "popoverButton"
+    ) as HTMLButtonElement | null;
+    const popover = document.getElementById(
+      "popoverContent"
+    ) as HTMLDivElement | null;
 
-  if (button && popover) {
-    button.addEventListener("click", () => {
-      const isHidden = popover.classList.toggle("hidden");
-      button.setAttribute("aria-expanded", String(!isHidden));
-    });
+    if (!button || !popover) return; // Si no existen, salimos
 
-    // Cerrar el popover si se hace clic fuera de él
-    document.addEventListener("click", (e) => {
+    // Eliminar eventos anteriores para evitar duplicaciones
+    button.removeEventListener("click", togglePopover);
+    document.removeEventListener("click", closePopoverOutsideClick);
+
+    function togglePopover() {
+      const isHidden = popover!.classList.toggle("hidden"); // <- ¡Aseguramos que no es null!
+      button!.setAttribute("aria-expanded", String(!isHidden));
+    }
+
+    function closePopoverOutsideClick(e: MouseEvent) {
       if (
-        !button.contains(e.target as Node) &&
-        !popover.contains(e.target as Node)
+        !button!.contains(e.target as Node) &&
+        !popover!.contains(e.target as Node)
       ) {
-        popover.classList.add("hidden");
-        button.setAttribute("aria-expanded", "false");
+        popover!.classList.add("hidden");
+        button!.setAttribute("aria-expanded", "false");
       }
-    });
+    }
+
+    // Agregar eventos nuevamente
+    button.addEventListener("click", togglePopover);
+    document.addEventListener("click", closePopoverOutsideClick);
   }
+
+  document.addEventListener("DOMContentLoaded", configurarPopover);
+  document.addEventListener("astro:after-swap", configurarPopover);
 </script>
