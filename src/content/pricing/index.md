@@ -3,51 +3,58 @@ title: Servicios
 description: "meta description"
 draft: false
 plans:
-  - title: Basic Plan
-    subtitle: Best For Small Individuals
-    price: 49
-    type: month
+  - title: IRPF, FONASA Y DECLARACIÓN JURADA
+    subtitle: -- ✔ --
+    price: 1490
+    type: mensual
     features:
-      - Express Service
-      - Customs Clearance
-      - Time-Critical Services
+      - Pagos de IRPF, IVA Fonasa
+      - Inscricpciones en DGI, BPS Y MTSS
+      - Declaración Juradas a DGI
+      - Asesoramiento
+      - Consultoría online
     button:
-      label: Get started for free
+      label: Consultar
       link: "/contact"
 
-  - title: Professional Plan
-    subtitle: Best For Professionals
-    price: 69
-    type: month
+  - title: APERTURA DE EMPRESAS
+    subtitle: -- ✔ --
+    price: 2190
+    type: mensual
     recommended: true
     features:
-      - Express Service
-      - Customs Clearance
-      - Time-Critical Services
-      - Cloud Service
-      - Best Dashboard
+      - Inscricpciones en DGI, BPS Y MTSS
+      - Sueldos y Aportes al BPS
+      - Declaración Juradas a DGI
+      - Asesoramiento
+      - Consultoría online
+      - .
+      - .
     button:
-      label: Get started
+      label: Consultar
       link: "/contact"
 
-  - title: Business Plan
-    subtitle: Best For Large Individuals
-    price: 99
-    type: month
+  - title: SERVICIOS DOMESTICOS
+    subtitle: -- ✔ --
+    price: 600
+    type: mensual
     features:
-      - Express Service
-      - Customs Clearance
-      - Time-Critical Services
+      - Sueldos y Liquidaciones
+      - Altas y Bajas del Personal Doméstico
+      - Control de aportes al BPS
+      - Asesoramiento
+      - .
+      - .
     button:
-      label: Get started
+      label: Consultar
       link: "/contact"
 
 call_to_action:
-  title: Need a larger plan?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
-  image: "/images/cta.png"
+  title: ¿Necesita un plan diferente?
+  content: "¿Necesita un plan diferente? Contáctenos y le ofreceremos una solución contable a la medida de su empresa."
+  image: "../../assets/moreinfo.svg"
   button:
     enable: true
-    label: "Contact Us"
+    label: "Consultar"
     link: "/contact"
 ---

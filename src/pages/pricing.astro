@@ -3,6 +3,7 @@ import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/components/Cta.astro";
 import type { TPostType, TPlan } from "@/types";
 import { getEntryBySlug } from "astro:content";
+import Boton from "@/element/Boton.astro";
 
 const entry = (await getEntryBySlug("pricing", "index")) as TPostType;
 const { title, description, plans, call_to_action } = entry.data;
@@ -11,7 +12,7 @@ const { title, description, plans, call_to_action } = entry.data;
 <Base title={title} description={description}>
   <section class="section pb-0">
     <div class="container">
-      <h1 class="text-center font-normal">{title}</h1>
+      <h1 class="text-center font-normal">{title}:</h1>
       <div class="section row -mt-10 justify-center md:mt-0">
         {
           plans?.map((plan: TPlan) => (
@@ -20,25 +21,26 @@ const { title, description, plans, call_to_action } = entry.data;
                 !plan.recommended ? "lg:px-0" : "col-recommended"
               }`}
             >
-              <div class="card text-center">
+              <div class="card text-center min-h-full ">
                 <h4>{plan.title}</h4>
+                <div class="myBox mb-8" />
+                <p>Desde:</p>
                 <div class="mt-5">
-                  <span class="text-5xl text-dark">${plan.price}</span>
+                  <>
+                    <span class="text-3xl text-blue-600">$</span>
+                    <span class="text-5xl text-dark">{plan.price}</span>
+                  </>
                   <span>/ {plan.type}</span>
                 </div>
                 <h5 class="mt-2 font-normal text-text">{plan.subtitle}</h5>
                 <ul class="mt-5">
-                  {plan?.features?.map((feature, index) => (
+                  {plan?.features?.map((feature) => (
                     <li class="mb-[10px] leading-5">{feature}</li>
                   ))}
                 </ul>
-                <a
-                  class={`btn mt-5 ${
-                    plan.recommended ? "btn-primary" : "btn-outline-primary"
-                  }`}
-                  href={plan.button.link}
-                >
-                  {plan.button.label}
+
+                <a href="/contact" rel="noopener noreferrer">
+                  <Boton title="Consultar" />
                 </a>
               </div>
             </div>
@@ -49,3 +51,18 @@ const { title, description, plans, call_to_action } = entry.data;
   </section>
   <Cta cta={call_to_action} />
 </Base>
+
+<style>
+  .myBox {
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(
+      0.25turn,
+      rgba(255, 249, 34),
+      rgba(99, 91, 255, 1),
+      rgba(56, 2, 155, 0)
+    );
+    border-image-slice: 1;
+    width: 100%;
+  }
+</style>

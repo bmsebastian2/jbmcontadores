@@ -12,6 +12,7 @@ const homepage = await getEntryBySlug("homepage", "index");
 const { banner, feature, services, workflow, call_to_action } = homepage.data;
 import BotonArriba from "@/element/BotonArriba.astro";
 import arrowImage from "@/assets/arrow-right.svg";
+import Workflow from "@/Components/Workflow.astro";
 ---
 
 <Base>
@@ -154,12 +155,8 @@ import arrowImage from "@/assets/arrow-right.svg";
         />
         <p class="mt-3" set:html={workflow?.description} />
       </div>
-      <Image
-        src={workflow!.image}
-        alt="workflow image"
-        width={1920}
-        height={414}
-      />
+      <!-- <Workflow /> -->
+      <Workflow />
     </section>
 
     <!-- Call to Action -->

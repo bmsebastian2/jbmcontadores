@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import { markdownify } from "@/lib/utils/textConverter";
 import Boton from "@/element/Boton.astro";
+import imagenContadores from "@/assets/secretariascontables.jpg";
 const { cta } = Astro.props;
 ---
 
@@ -11,7 +12,7 @@ const { cta } = Astro.props;
       <div class="md:col-5 lg:col-4">
         <Image
           class="w-full"
-          src={cta?.image}
+          src={imagenContadores}
           alt="call to action image"
           width={325}
           height={206}
@@ -32,3 +33,14 @@ const { cta } = Astro.props;
     </div>
   </div>
 </section>
+
+<style>
+  section {
+    margin-top: 420px;
+  }
+  @media screen and (max-width: 767px) {
+    section {
+      margin-top: 860px;
+    }
+  }
+</style>
