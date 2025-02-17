@@ -13,6 +13,10 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
 import BotonArriba from "@/element/BotonArriba.astro";
 import arrowImage from "@/assets/arrow-right.svg";
 import Workflow from "@/Components/Workflow.astro";
+import serviceSlide1 from "@/assets/service-slide-1.png";
+import seriveSlide2 from "@/assets/service-slide-2.png";
+import serviceSlide3 from "@/assets/service-slide-3.png";
+const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
 ---
 
 <Base>
@@ -71,17 +75,19 @@ import Workflow from "@/Components/Workflow.astro";
                   {service!.images!.length > 1 ? (
                     <div class="swiper">
                       <div class="swiper-wrapper">
-                        {service!.images?.map((image: string) => (
-                          <div class="swiper-slide">
-                            <Image
-                              class="mx-auto"
-                              src={image}
-                              width={538}
-                              height={328}
-                              alt=""
-                            />
-                          </div>
-                        ))}
+                        {service!.images?.map(
+                          (image: string, items: number) => (
+                            <div class="swiper-slide">
+                              <Image
+                                class="mx-auto"
+                                src={listImagenSlider[items]}
+                                width={538}
+                                height={328}
+                                alt=""
+                              />
+                            </div>
+                          )
+                        )}
                       </div>
                       <div class="pagination" />
                     </div>
@@ -160,7 +166,7 @@ import Workflow from "@/Components/Workflow.astro";
     </section>
 
     <!-- Call to Action -->
-    <Cta cta={call_to_action} />
+    <Cta cta={call_to_action} isHight={true} />
   </section>
 </Base>
 

@@ -1,29 +1,24 @@
 ---
-title: "Terms and Conditions"
-description: "this is meta description"
+title: "Términos y Condiciones"
+description: "Esta es una descripción meta"
 draft: false
 ---
 
-#### Responsibility of Contributors
+#### Responsabilidad de los Contribuyentes
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+Todos los colaboradores y usuarios son responsables del contenido que publican o comparten a través de nuestros servicios. Nos reservamos el derecho de eliminar cualquier contenido que infrinja nuestras normas o la legislación vigente. Es responsabilidad del usuario garantizar que la información proporcionada sea precisa y cumpla con la normativa aplicable.
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+#### Recopilación de Información Personal
 
-#### Gathering of Personal Information
+Recopilamos información personal cuando los usuarios interactúan con nuestros servicios, incluyendo nombre, dirección de correo electrónico, número de teléfono y otros datos necesarios para la correcta prestación del servicio. Estos datos se utilizan para mejorar la experiencia del usuario, personalizar los servicios y cumplir con nuestras obligaciones legales.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+#### Protección de la Información Personal
 
-#### Protection of Personal- Information
+Aplicamos estrictas medidas de seguridad para proteger la información personal de nuestros usuarios contra accesos no autorizados, pérdidas, alteraciones o divulgaciones indebidas. La información se almacena en servidores seguros y solo el personal autorizado tiene acceso a ella.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+#### Cambios en la Política de Privacidad
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
-
-#### Privacy Policy Changes
-
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+1. Nos reservamos el derecho de actualizar nuestra política de privacidad en cualquier momento para reflejar cambios en nuestras prácticas o en la legislación aplicable.
+2. Eliminaremos cualquier comentario que amenace o perjudique la reputación de cualquier persona u organización.
+3. No compartimos información personal con terceros sin el consentimiento expreso del usuario, salvo cuando sea requerido por ley.
+4. Cualquier actualización relevante será notificada automáticamente a los clientes a través de nuestros canales oficiales.

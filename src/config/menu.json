@@ -10,11 +10,11 @@
     },
     {
       "name": "Servicios",
-      "url": "/pricing"
+      "url": "/servicios"
     },
     {
       "name": "Contactos",
-      "url": "/contact"
+      "url": "/contactos"
     },
     {
       "name": "FAQ",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Acerca de nosotros",
-      "url": "/elements"
+      "url": "/nosotros"
     }
   ],
   "footer": [
@@ -31,7 +31,7 @@
       "menu": [
         {
           "text": "Servicios",
-          "url": "/pricing"
+          "url": "/servicios"
         },
         {
           "text": "Inicio rápido",
@@ -43,16 +43,16 @@
       "name": "Productos",
       "menu": [
         {
-          "text": "Features",
-          "url": "#"
+          "text": "Aperturas de Empresas",
+          "url": "/servicios"
         },
         {
-          "text": "Platform",
-          "url": "#"
+          "text": "IRPF, FONASA Y Declaración Jurada",
+          "url": "/servicios"
         },
         {
-          "text": "Pricing",
-          "url": "/pricing"
+          "text": "Servicios Domesticos",
+          "url": "/servicios"
         }
       ]
     },

@@ -3,10 +3,10 @@ import { Image } from "astro:assets";
 import { markdownify } from "@/lib/utils/textConverter";
 import Boton from "@/element/Boton.astro";
 import imagenContadores from "@/assets/secretariascontables.jpg";
-const { cta } = Astro.props;
+const { cta, isHight } = Astro.props;
 ---
 
-<section class="section px-4">
+<section class={isHight ? "border-top" : ""} +"section px-4">
   <div class="section container rounded-xl shadow">
     <div class="row mx-auto items-center justify-center">
       <div class="md:col-5 lg:col-4">
@@ -35,11 +35,11 @@ const { cta } = Astro.props;
 </section>
 
 <style>
-  section {
+  .border-top {
     margin-top: 420px;
   }
   @media screen and (max-width: 767px) {
-    section {
+    .border-top {
       margin-top: 860px;
     }
   }
