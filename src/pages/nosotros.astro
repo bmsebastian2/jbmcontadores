@@ -2,7 +2,8 @@
 import Base from "@/layouts/Base.astro";
 import { Image } from "astro:assets";
 
-import imagenJBM from "@/assets/banner.jpg";
+import bannerJBM from "@/assets/banner.jpg";
+import favicon from "@/assets/favicon.svg";
 ---
 
 <Base
@@ -14,14 +15,9 @@ import imagenJBM from "@/assets/banner.jpg";
     <div class="container px-5 py-24 mx-auto flex flex-col">
       <div class="lg:w-4/6 mx-auto">
         <div class="rounded-lg h-64 overflow-hidden">
-          <!-- <img
-              alt="content"
-              class="object-cover object-center h-full w-full"
-              src="https://dummyimage.com/1200x500"
-            /> -->
           <Image
             class="mx-auto mt-10"
-            src={imagenJBM}
+            src={bannerJBM}
             width={538}
             height={328}
             alt=""
@@ -32,8 +28,8 @@ import imagenJBM from "@/assets/banner.jpg";
             <div
               class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"
             >
-              <img
-                src="../../public/images/favicon.svg"
+              <Image
+                src={favicon}
                 alt="Icono JBMContadores"
                 width="80"
                 height="80"
