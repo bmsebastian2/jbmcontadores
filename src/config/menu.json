@@ -30,11 +30,11 @@
       "name": "Compañia",
       "menu": [
         {
-          "text": "Servicios",
+          "text": "Servicios.",
           "url": "/servicios"
         },
         {
-          "text": "Inicio rápido",
+          "text": "Inicio.",
           "url": "#"
         }
       ]
@@ -43,15 +43,15 @@
       "name": "Productos",
       "menu": [
         {
-          "text": "Aperturas de Empresas",
+          "text": "✔ Aperturas de Empresas.",
           "url": "/servicios"
         },
         {
-          "text": "IRPF, FONASA Y Declaración Jurada",
+          "text": "✔ IRPF, FONASA y Declaración Jurada.",
           "url": "/servicios"
         },
         {
-          "text": "Servicios Domesticos",
+          "text": "✔ Servicios Domesticos.",
           "url": "/servicios"
         }
       ]
@@ -60,15 +60,15 @@
       "name": "Soporte",
       "menu": [
         {
-          "text": "FAQ",
+          "text": "FAQ.",
           "url": "/faq"
         },
         {
-          "text": "Política de privacidad",
+          "text": "Política de privacidad.",
           "url": "/privacy-policy"
         },
         {
-          "text": "Términos y condiciones",
+          "text": "Términos y condiciones.",
           "url": "/terms-conditions"
         }
       ]
