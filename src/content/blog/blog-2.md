@@ -1,7 +1,7 @@
 ---
 title: No sabías ? El plazo para sumarse a la facturación electrónica venció el 31/12/2024?
 description: "¿Ya estás listo para la facturación electrónica? ¡Cumplir con la normativa de la DGI nunca fue tan sencillo!"
-image: "/images/blog-5.jpg"
+image: "/images/blog-5-v2.jpg"
 date: 2022-08-04T05:00:00Z
 draft: false
 ---

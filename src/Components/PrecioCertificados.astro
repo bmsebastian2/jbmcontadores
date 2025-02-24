@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
 import certificadoImage from "../assets/Group 8.jpg";
 ---
 
-<section class="text-gray-600 body-font mt-12">
+<section class="text-gray-600 body-font mt-12 container">
   <div
     class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center"
   >
@@ -52,9 +52,9 @@ import certificadoImage from "../assets/Group 8.jpg";
   </div>
 </section>
 <div
-  class="container mx-auto flex flex-col items-center md:px-48 px-12 text-center"
+  class="container mx-auto my-2 flex flex-col items-center md:px-48 px-12 text-center"
 >
-  <p class="text-gray-400">CERTIFICADOS DE INGRESOS:</p>
+  <p class="text-gray-500">CERTIFICADOS DE INGRESOS:</p>
   <Faq />
 </div>
 
@@ -72,11 +72,20 @@ import certificadoImage from "../assets/Group 8.jpg";
     width: 100%;
   }
   section {
+    border-right: 8px solid rgb(65, 141, 247);
+    border-radius: 0 20px 20px 0;
     background: rgb(245, 249, 252);
     background: linear-gradient(
       97deg,
       rgba(245, 249, 252, 1) 20%,
       rgba(255, 255, 255, 1) 52%
     );
+  }
+
+  @media (max-width: 400px) {
+    section {
+      border-left: 8px solid rgb(65, 141, 247);
+      border-radius: 20px 20px 20px 20px;
+    }
   }
 </style>
