@@ -72,7 +72,7 @@ const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
       services!.map((service: any, index: number) => {
         const isOdd = index % 2 > 0;
         return (
-          <section class={`  mx-20 section ${isOdd && "bg-theme-light"}`}>
+          <section class={`  my-10 section ${isOdd && "bg-theme-light"}`}>
             <div class="container">
               <div class="items-center gap-8 md:grid md:grid-cols-2">
                 <div class={`service-carousel ${!isOdd && "md:order-2"}`}>
@@ -109,7 +109,7 @@ const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
                 <div
                   class={`service-content mt-5 md:mt-0 ${!isOdd && "md:order-1"}`}
                 >
-                  <h2 class="font-bold leading-[40px]">{service?.title}</h2>
+                  <h3 class="font-bold leading-[40px]">{service?.title}</h3>
                   <p class="mt-4 mb-2">{service?.content}</p>
                   {service?.button?.enable && (
                     <a
