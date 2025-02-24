@@ -16,6 +16,7 @@ import Workflow from "@/Components/Workflow.astro";
 import serviceSlide1 from "@/assets/service-slide-1.png";
 import seriveSlide2 from "@/assets/service-slide-2.png";
 import serviceSlide3 from "@/assets/service-slide-3.png";
+import facturacionElectr from "../../public/images/blog-5.jpg";
 const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
 ---
 
@@ -55,9 +56,11 @@ const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
     </div>
 
     <!-- Features -->
-    <section class="section t">
+    <section class="section">
       <div class="container">
-        <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 text-center"
+        >
           <CardsTriangulo />
         </div>
       </div>
@@ -69,7 +72,7 @@ const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
       services!.map((service: any, index: number) => {
         const isOdd = index % 2 > 0;
         return (
-          <section class={`section ${isOdd && "bg-theme-light"}`}>
+          <section class={`  mx-20 section ${isOdd && "bg-theme-light"}`}>
             <div class="container">
               <div class="items-center gap-8 md:grid md:grid-cols-2">
                 <div class={`service-carousel ${!isOdd && "md:order-2"}`}>
@@ -95,14 +98,14 @@ const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
                   ) : (
                     <Image
                       class="mx-auto"
-                      src={serviceSlide1}
+                      src={facturacionElectr}
                       width={538}
                       height={328}
                       alt=""
                     />
                   )}
                 </div>
-                {/* Content */}
+
                 <div
                   class={`service-content mt-5 md:mt-0 ${!isOdd && "md:order-1"}`}
                 >
@@ -154,7 +157,7 @@ const listImagenSlider = [serviceSlide1, seriveSlide2, serviceSlide3];
     <!-- ./End service -->
 
     <!-- Workflow -->
-    <section class="section pb-0">
+    <section class="section pb-0 mt-20">
       <div class="mb-8 text-center">
         <h2
           class="mx-auto max-w-[400px] font-bold leading-[44px]"

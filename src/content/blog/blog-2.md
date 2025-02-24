@@ -1,5 +1,5 @@
 ---
-title: No sabías? El plazo para sumarse a la facturación electrónica venció el 31/12/2024?
+title: No sabías ? El plazo para sumarse a la facturación electrónica venció el 31/12/2024?
 description: "¿Ya estás listo para la facturación electrónica? ¡Cumplir con la normativa de la DGI nunca fue tan sencillo!"
 image: "/images/blog-5.jpg"
 date: 2022-08-04T05:00:00Z
@@ -11,8 +11,6 @@ draft: false
 <!-- Aquí te presentamos **las tendencias clave que no puedes ignorar** si estás interesado en el mundo de las criptomonedas. -->
 
 ---
-
-## **¿Ya estás listo para la facturación electrónica? ¡Cumplir con la normativa de la DGI nunca fue tan sencillo!**
 
 Si tenés un emprendimiento en Uruguay, este 2025 comienza con un cambio importante: todos los contribuyentes de IVA (incluidos los de IVA mínimo) deberán ser emisores electrónicos desde el momento en que se inscriban, reinicien actividades o se conviertan en contribuyentes. Con excepción por ahora, los Monotributistas y quienes aportan al Monotributo Social **MIDES**.
 
