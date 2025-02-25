@@ -34,7 +34,7 @@ services:
 # workflow
 workflow:
   title: "Gestionamos tu contabilidad."
-  image: "/assets/banner-v1.jpg"
+  image: "/assets/bannerV1.jpg"
   description: ""
 
 # call_to_action
